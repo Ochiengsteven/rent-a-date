@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGoogle, faApple } from '@fortawesome/free-brands-svg-icons';
+import { FacebookFilled, GoogleOutlined, AppleFilled } from '@ant-design/icons';
 
 const LoginPage = () => {
   return (
@@ -60,19 +59,19 @@ const LoginPage = () => {
               className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
               aria-label="Sign in with Facebook"
             >
-              <FontAwesomeIcon icon={faFacebook} className="text-blue-600 text-xl" />
+              <FacebookFilled className="text-blue-600 text-xl" />
             </button>
             <button
               className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
               aria-label="Sign in with Google"
             >
-              <FontAwesomeIcon icon={faGoogle} className="text-red-600 text-xl" />
+              <GoogleOutlined className="text-red-600 text-xl" />
             </button>
             <button
               className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
               aria-label="Sign in with Apple"
             >
-              <FontAwesomeIcon icon={faApple} className="text-black text-xl" />
+              <AppleFilled className="text-black text-xl" />
             </button>
           </div>
         </div>

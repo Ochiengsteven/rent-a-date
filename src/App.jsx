@@ -5,6 +5,8 @@ import Features from "./components/Features";
 import Hero from "./pages/Hero";
 import Banner from "./components/Banner";
 import Footer from "./components/footer";
+import LoginPage from "./components/login";
+import RegistrationPage from "./components/registration";
 const App = () => {
   return (
     <div>
@@ -12,6 +14,8 @@ const App = () => {
       <Features />
       <Banner />
       <Footer />
+      <LoginPage/>
+      <RegistrationPage/>
     </div>
   );
 };
