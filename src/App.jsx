@@ -1,20 +1,14 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement } from "./redux/reducers/counterSlice";
-
+import React from 'react'
+import Home from './pages/home'
+import Features from './components/Features'
+import Banner from './components/Banner'
 const App = () => {
-  const count = useSelector((state) => state.counter.value);
-  const dispatch = useDispatch();
   return (
     <div>
-      <p className="text-red-500">app</p>
-      <div>
-        <p>Count: {count}</p>
-        <button onClick={() => dispatch(increment())}>Increment</button>
-        <button onClick={() => dispatch(decrement())}>Decrement</button>
-      </div>
+      <Features />
+      <Banner />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
