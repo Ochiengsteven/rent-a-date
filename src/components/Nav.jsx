@@ -84,13 +84,13 @@ const Nav = () => {
               {label}
             </button>
           ))}
+          <button className="bg-[#F461A4] text-white px-4 py-2 rounded-md w-36">
+            Login
+          </button>
+          <button className="bg-[#39B2D4] text-white px-4 py-2 rounded-md w-36">
+            Signup
+          </button>
         </div>
-        <button className="hidden lg:block bg-secondary text-white px-4 py-2 rounded-md">
-          Login
-        </button>
-        <button className="hidden lg:block bg-secondary text-white px-4 py-2 rounded-md">
-          Signup
-        </button>
       </Drawer>
     </nav>
   );
