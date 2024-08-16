@@ -6,6 +6,8 @@ import Hero from "./pages/Hero";
 import Banner from "./components/Banner";
 import Footer from "./components/footer";
 import Testimonials from "./components/testimonials";
+import LoginPage from "./components/login";
+import RegistrationPage from "./components/registration";
 const App = () => {
   return (
     <div>
@@ -14,6 +16,8 @@ const App = () => {
       <Banner />
       <Testimonials />
       <Footer />
+      <LoginPage />
+      <RegistrationPage />
     </div>
   );
 };
