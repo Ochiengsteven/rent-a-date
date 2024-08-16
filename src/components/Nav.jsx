@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Drawer } from "antd";
 import { CloseOutlined } from "@ant-design/icons";
 import HamburgerButton from "./HamburgerButton";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -55,13 +56,17 @@ const Nav = () => {
           </h1>
         </div>
       </div>
-      <div className="flex gap-2">
-        <button className="hidden lg:block bg-[#F461A4] text-white px-4 py-2 rounded-md">
-          Login
-        </button>
-        <button className="hidden lg:block bg-[#39B2D4] text-white px-4 py-2 rounded-md">
-          Signup
-        </button>
+      <div className="hidden lg:flex gap-2">
+        <Link to="/login">
+          <button className="bg-[#F461A4] text-white px-4 py-2 rounded-md w-36">
+            Login
+          </button>
+        </Link>
+        <Link to="/signup">
+          <button className="bg-[#39B2D4] text-white px-4 py-2 rounded-md w-36">
+            Signup
+          </button>
+        </Link>
       </div>
       <HamburgerButton onClick={showDrawer} />
       <Drawer
@@ -84,12 +89,16 @@ const Nav = () => {
               {label}
             </button>
           ))}
-          <button className="bg-[#F461A4] text-white px-4 py-2 rounded-md w-36">
-            Login
-          </button>
-          <button className="bg-[#39B2D4] text-white px-4 py-2 rounded-md w-36">
-            Signup
-          </button>
+          <Link to="/login">
+            <button className="bg-[#F461A4] text-white px-4 py-2 rounded-md w-36">
+              Login
+            </button>
+          </Link>
+          <Link to="/signup">
+            <button className="bg-[#39B2D4] text-white px-4 py-2 rounded-md w-36">
+              Signup
+            </button>
+          </Link>
         </div>
       </Drawer>
     </nav>
