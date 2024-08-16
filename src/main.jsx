@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store.js";
 import SignupChatbot from "./components/SignupChatbot.jsx";
 import LoginPage from "./components/login.jsx";
+import RegistrationPage from "./components/registration.jsx";
 import App from "./App.jsx";
 import "./index.css";
 
@@ -14,7 +15,8 @@ createRoot(document.getElementById("root")).render(
       <Router>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/signup" element={<SignupChatbot />} />
+          <Route path="/signup" element={<RegistrationPage />} />
+          <Route path="/onboard" element={<SignupChatbot />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </Router>

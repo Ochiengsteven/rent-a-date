@@ -6,7 +6,7 @@ const Hero = () => {
     <div>
       <Nav />
       <div className="px-8 w-screen">
-        <div className="bg-[#F1FBFE] relative md:h-[50vh] rounded-[30px] px-16 pt-4 overflow-hidden">
+        <div className="bg-[#F1FBFE] relative md:h-[100vh] rounded-[30px] px-16 pt-4 overflow-hidden">
           <div className="relative z-10 mt-14">
             <h1 className="text-6xl font-extrabold mb-5">
               Connect and interact
